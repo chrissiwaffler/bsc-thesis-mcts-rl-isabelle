@@ -1,0 +1,11 @@
+[submodule "miniF2F-facebook"]
+	path = miniF2F-facebook
+	url = https://github.com/facebookresearch/miniF2F
+
+[submodule "qisabelle"]
+	path = qisabelle
+	url = https://github.com/chrissiwaffler/qisabelle
+
+[submodule "miniF2F"]
+	path = miniF2F
+	url = https://github.com/openai/miniF2F.git

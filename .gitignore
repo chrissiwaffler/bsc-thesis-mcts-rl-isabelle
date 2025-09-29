@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ML/AI specific
+wandb/
+tensorboard/
+lightning_logs/
+mlruns/
+models/
+weights/
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# Logs and debugging
+logs/
+*.log
+checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache/
+.mypy_cache/
+
+# Isabelle specific
+**/afp_*/**
+**/dockerheaps/**
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
