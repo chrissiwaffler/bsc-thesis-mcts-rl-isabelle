@@ -32,8 +32,7 @@ The repository consists of two main components:
 ### Prerequisites
 - Python >= 3.10
 - [UV](https://docs.astral.sh/uv/) - Fast Python package manager
-- Isabelle theorem prover (native or Docker)
-- Docker (for qisabelle server)
+- Docker and Docker Compose (for qisabelle server)
 
 ### Setup
 
@@ -47,7 +46,15 @@ uv sync --no-build-isolation
 
 # Install qisabelle in editable mode
 uv pip install -e ./qisabelle
+
+# Setup Isabelle environment (requires Docker)
+./setup_qisabelle.sh
 ```
+
+The `setup_qisabelle.sh` script will:
+- Build and start the qisabelle Docker container
+- Configure the Isabelle server environment
+- No local Isabelle installation required
 
 ### Isabelle Configuration
 
