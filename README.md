@@ -44,9 +44,6 @@ cd bsc_thesis_mcts_rl_isabelle
 # Install dependencies
 uv sync --no-build-isolation
 
-# Install qisabelle in editable mode
-uv pip install -e ./qisabelle
-
 # Setup Isabelle environment (requires Docker)
 ./setup_qisabelle.sh
 ```
