@@ -2,7 +2,7 @@
 
 This repository contains the implementation for my Bachelor thesis combining Monte Carlo Tree Search (MCTS), Large Language Models (LLMs), Isabelle theorem prover, and Reinforcement Learning (RL) for automated theorem proving.
 
-**Thesis PDF**: [bsc_thesis.pdf](./bsc_thesis.pdf)
+**Thesis PDF**: [bsc thesis.pdf](./bsc%20thesis.pdf)
 
 ## Project Structure
 
