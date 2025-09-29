@@ -137,6 +137,13 @@ nix --extra-experimental-features nix-command --extra-experimental-features flak
 nix develop
 ```
 
+## Model Weights
+
+Trained model weights are stored on Hugging Face:
+- **Repository**: https://huggingface.co/chrissi/isabelle-mcts-rl
+- **Contents**: Policy and value networks trained with MCTS + RL
+- **Usage**: Models can be loaded directly for inference or fine-tuning
+
 ## Architecture Overview
 
 ### MCTS Component
