@@ -33,6 +33,7 @@ The repository consists of two main components:
 - Python >= 3.10
 - [UV](https://docs.astral.sh/uv/) - Fast Python package manager
 - Docker and Docker Compose (for qisabelle server)
+- **Note**: Isabelle theorem prover does not need to be installed locally - it runs in Docker
 
 ### Setup
 
@@ -53,24 +54,13 @@ The `setup_qisabelle.sh` script will:
 - Configure the Isabelle server environment
 - No local Isabelle installation required
 
-### Isabelle Configuration
 
-```bash
-# Set Isabelle PATH (macOS example)
-export PATH="/Applications/Isabelle2023.app/bin:$PATH"
-
-# Verify installation
-which isabelle
-```
 
 ## Usage
 
 ### Running MCTS Training
 
 ```bash
-# Configure Ray runtime (required for distributed training)
-export RAY_RUNTIME_ENV_HOOK=ray._private.runtime_env.uv_runtime_env_hook.hook
-
 # Run MCTS training pipeline
 uv run python mcts/launcher.py
 ```
@@ -99,17 +89,7 @@ uv run accelerate config
 
 ## Development
 
-### Code Quality
 
-```bash
-# Run all quality checks
-uv run ruff format . && uv run ruff check . --fix && uv run mypy mcts/ beamsearch/
-
-# Individual checks
-uv run ruff format .
-uv run ruff check . --fix
-uv run mypy mcts/ beamsearch/
-```
 
 ### Environment Variables
 
@@ -168,6 +148,3 @@ Trained model weights are stored on Hugging Face:
 - Local models via Hugging Face transformers
 - Results tracking and experiment management
 
-## Citation
-
-If you use this work in your research, please cite it appropriately according to your institution's guidelines.
